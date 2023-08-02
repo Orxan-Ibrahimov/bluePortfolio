@@ -331,4 +331,92 @@ section.education > .education-row > .education-column > .education-box > .educa
 }
 section.education > .education-row > .education-column > .education-box > .education-content > .content > p {
   font-size: 1.6rem;
+}
+
+section.skills {
+  min-height: auto;
+  padding-bottom: 7rem;
+  background: #112e42;
+}
+section.skills > .skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+section.skills > .skills-row > .skills-column {
+  flex: 1 1 40rem;
+}
+section.skills > .skills-row > .skills-column > .title {
+  font-size: 2.5rem;
+  margin: 0 0 1.5rem;
+}
+section.skills > .skills-row > .skills-column > .skills-box > .skills-content {
+  position: relative;
+  border: 0.2rem solid #00abf0;
+  border-radius: 0.6rem;
+  padding: 5rem 1.5rem;
+  z-index: 1;
+  overflow: hidden;
+}
+section.skills > .skills-row > .skills-column > .skills-box > .skills-content > .progress {
+  padding: 1rem 0;
+}
+section.skills > .skills-row > .skills-column > .skills-box > .skills-content > .progress > h3 {
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: space-between;
+}
+section.skills > .skills-row > .skills-column > .skills-box > .skills-content > .progress > h3 > span {
+  color: #ededed;
+}
+section.skills > .skills-row > .skills-column > .skills-box > .skills-content > .progress > .bar {
+  height: 2.5rem;
+  border-radius: 0.6rem;
+  border: 0.2rem solid #00abf0;
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+section.skills > .skills-row > .skills-column > .skills-box > .skills-content > .progress > .bar > span {
+  display: block;
+  height: 100%;
+  border-radius: 0.3rem;
+  background-color: #00abf0;
+}
+section.skills > .skills-row > .skills-column > .skills-box > .skills-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #081b29;
+  z-index: -1;
+  transition: 0.5s;
+}
+section.skills > .skills-row > .skills-column > .skills-box > .skills-content:hover::before {
+  width: 100%;
+}
+section.skills > .skills-row > .skills-column:nth-child(1) > .skills-box > .skills-content > .progress:nth-child(1) > .bar > span {
+  width: 90%;
+}
+section.skills > .skills-row > .skills-column:nth-child(1) > .skills-box > .skills-content > .progress:nth-child(2) > .bar > span {
+  width: 80%;
+}
+section.skills > .skills-row > .skills-column:nth-child(1) > .skills-box > .skills-content > .progress:nth-child(3) > .bar > span {
+  width: 50%;
+}
+section.skills > .skills-row > .skills-column:nth-child(1) > .skills-box > .skills-content > .progress:nth-child(4) > .bar > span {
+  width: 45%;
+}
+section.skills > .skills-row > .skills-column:nth-child(2) > .skills-box > .skills-content > .progress:nth-child(1) > .bar > span {
+  width: 82%;
+}
+section.skills > .skills-row > .skills-column:nth-child(2) > .skills-box > .skills-content > .progress:nth-child(2) > .bar > span {
+  width: 63%;
+}
+section.skills > .skills-row > .skills-column:nth-child(2) > .skills-box > .skills-content > .progress:nth-child(3) > .bar > span {
+  width: 39%;
+}
+section.skills > .skills-row > .skills-column:nth-child(2) > .skills-box > .skills-content > .progress:nth-child(4) > .bar > span {
+  width: 78%;
 }/*# sourceMappingURL=style.css.map */

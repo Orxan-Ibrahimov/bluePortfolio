@@ -234,8 +234,8 @@ section.education {
           position: relative;
           padding-left: 2rem;
 
-          &::before{
-            content: '';
+          &::before {
+            content: "";
             position: absolute;
             top: 0;
             left: -1.1rem;
@@ -252,8 +252,8 @@ section.education {
             border-radius: 0.6rem;
             margin-bottom: 2rem;
 
-            &::before{
-              content: '';
+            &::before {
+              content: "";
               position: absolute;
               top: 0;
               left: 0;
@@ -261,12 +261,12 @@ section.education {
               height: 100%;
               background: $second-bg-color;
               z-index: -1;
-              transition: .5s;
+              transition: 0.5s;
             }
 
-            &:hover{
-              &::before{
-width: 100%;
+            &:hover {
+              &::before {
+                width: 100%;
               }
             }
             & > .year {
@@ -283,7 +283,7 @@ width: 100%;
               font-size: 2rem;
             }
 
-            &> p{
+            & > p {
               font-size: 1.6rem;
             }
           }
@@ -292,3 +292,153 @@ width: 100%;
     }
   }
 }
+
+section.skills {
+  min-height: auto;
+  padding-bottom: 7rem;
+  background: $second-bg-color;
+
+  & > .skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+
+    & > .skills-column {
+      flex: 1 1 40rem;
+
+      & > .title {
+        font-size: 2.5rem;
+        margin: 0 0 1.5rem;
+      }
+
+      & > .skills-box {
+        & > .skills-content {
+          position: relative;
+          border: 0.2rem solid $main-color;
+          border-radius: 0.6rem;
+          padding: 5rem 1.5rem;
+          z-index: 1;
+          overflow: hidden;
+
+          & > .progress {
+            padding: 1rem 0;
+
+            & > h3 {
+              font-size: 1.7rem;
+              display: flex;
+              justify-content: space-between;
+
+              & > span {
+                color: $text-color;
+              }
+            }
+
+            & > .bar {
+              height: 2.5rem;
+              border-radius: 0.6rem;
+              border: 0.2rem solid $main-color;
+              padding: 0.5rem;
+              margin: 1rem 0;
+
+              & > span {
+                display: block;
+                height: 100%;
+                border-radius: 0.3rem;
+                background-color: $main-color;
+              }
+            }
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: $bg-color;
+            z-index: -1;
+            transition: 0.5s;
+          }
+
+          &:hover {
+            &::before {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      &:nth-child(1) {
+        & > .skills-box {
+          & > .skills-content {
+            & > .progress:nth-child(1) {
+              & > .bar {
+                & > span {
+                  width: 90%;
+                }
+              }
+            }
+            & > .progress:nth-child(2) {
+              & > .bar {
+                & > span {
+                  width: 80%;
+                }
+              }
+            }
+            & > .progress:nth-child(3) {
+              & > .bar {
+                & > span {
+                  width: 50%;
+                }
+              }
+            }
+            & > .progress:nth-child(4) {
+              & > .bar {
+                & > span {
+                  width: 45%;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        & > .skills-box {
+          & > .skills-content {
+            & > .progress:nth-child(1) {
+              & > .bar {
+                & > span {
+                  width: 82%;
+                }
+              }
+            }
+            & > .progress:nth-child(2) {
+              & > .bar {
+                & > span {
+                  width: 63%;
+                }
+              }
+            }
+            & > .progress:nth-child(3) {
+              & > .bar {
+                & > span {
+                  width: 39%;
+                }
+              }
+            }
+            & > .progress:nth-child(4) {
+              & > .bar {
+                & > span {
+                  width: 78%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
